@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<text class="tit">heiiow-world</text>
+<button size="mini">按钮</button>

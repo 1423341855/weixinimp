@@ -1,66 +1,33 @@
-// pages/home/home.js
+const app = getApp()
+console.log(app.globalData.name);
+console.log(app.globalData.age);
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    name:'coderwhy',
+    age:18,
+    standts:[
+      { id: 0, name: '鸣人', age: 32 },
+      { id: 1, name: '路飞', age: 21 },
+      { id: 2, name: '凯多', age: 45 },
+      { id: 3, name: '善易', age: 17 }
+    ],
+    num:0,
+    appname: app.globalData.name,
+    appage: app.globalData.age
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handclick(){
+    console.log('按钮发生了点击');
+    this.setData({
+       num: this.data.num + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handBclick(){
+    this.setData({
+      num: this.data.num - 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  headgetUserInfo(event){
+    console.log(event);
   }
 })
+

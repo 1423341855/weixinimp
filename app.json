@@ -1,6 +1,32 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/creagory/creagory"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#002366",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的第一个小程序",
+    "backgroundColor": "skyblue",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#3299cc",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "分类",
+        "iconPath": "assets/icon/class.png",
+        "selectedIconPath": "assets/icon/classs.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "assets/icon/my.png",
+        "selectedIconPath": "assets/icon/mys.png"
+      }
+    ]
+  }
 }

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "私人空间",
+  "navigationBarBackgroundColor": "#ff0000",
+  "enablePullDownRefresh": true
 }

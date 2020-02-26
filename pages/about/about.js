@@ -5,62 +5,50 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list:[]
+   
+  },
+  
+  // 页面的生命周期函数
+  onLoad(){
+    wx.request({
+      url: 'http://127.0.0.1:8080/user/list?type=dataoneA',
+      success: (res) => {
+        const data = res.data;
+        this.setData({
+          list:data
+        })
+      }
+    })
+  },
+  onReady(){
+    console.log('onReady执行完毕');
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onShow(){
+    console.log('onshow执行完毕');
+    console.log(this.data.list);
+  },
+  onHide(){
+    console.log('onHide执行完毕');
+  },
+  onUnload(){
+    console.log('onUnload执行完毕');
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //监听滚动事件
+  onPageScroll(obj){
+  //console.log(obj);
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  
+  //滚动到底部触发
+  onReachBottom(){
+    console.log('已经滚动到底部');
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  
+  //下拉时触发
+  onPullDownRefresh(){
+    console.log('你已经下拉了此页面');
   }
+
 })

@@ -1,3 +1,23 @@
 <!--pages/home/home.wxml-->
-<text class="tit">heiiow-world</text>
-<button size="mini">按钮</button>
+
+<!-- 1小程序的数据绑定 -->
+<view>hellow {{name}}</view>
+<view>我的年龄是 {{age + 20}} </view>
+
+<!-- 2列表展示 -->
+<view wx:for = "{{standts}}">{{item.name}}-{{item.age}}</view>
+
+<!-- 事件监听，改变date -->
+<view>当前计数：{{num}}</view>
+<button size="mini" bindtap="handclick">+</button>
+<button size="mini" bindtap="handBclick">-</button>
+
+  <button size="mini" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="headgetUserInfo" >
+        获取授权
+  </button>
+
+  <view>name:  {{appname}}</view>
+  <view>age:  {{appage}}</view>
+  <open-data type="userNickName"></open-data>

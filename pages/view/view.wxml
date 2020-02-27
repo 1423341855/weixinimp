@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+<view class="box">我是第一个view</view>
+
+<view>我是第二个view</view>
+<text>\n</text>
+
+<!-- hover-class属性 -->
+<view class="boxA" hover-class="boxAs" hover-stay-time='3000'>我是第三个view</view>
+<text>\n</text>
+
+<!-- hover-stop-propagation属性 -->
+<view class="boxB" hover-class="boxBs">
+我是外城view
+<view class="boxC" hover-class="boxCs" hover-stop-propagation>
+我是内层view
+</view>
+
+</view>

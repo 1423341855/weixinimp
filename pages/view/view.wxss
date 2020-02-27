@@ -1,0 +1,35 @@
+.box{
+  background-color: skyblue;
+  color:white
+}
+
+.boxA{
+  width:200px;
+  height:100px;
+  background-color:purple;  
+}
+
+.boxAs{
+  background-color: orange;
+  color:white;
+}
+
+.boxB{
+  background-color: skyblue;
+  width:300px;
+  height:300px;
+}
+
+.boxC{
+  background-color: yellow;
+  width: 200px;
+  height:100px;
+}
+
+.boxBs{
+  background-color: blue;
+}
+
+.boxCs{
+  background-color: green;
+}

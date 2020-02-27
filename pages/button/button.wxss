@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.butclass{
+  background: skyblue;
+  color: white;
+}

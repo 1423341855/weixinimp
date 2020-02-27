@@ -1,0 +1,19 @@
+
+<!-- 水平滚动 -->
+<scroll-view class="concenA" scroll-x>
+   <view wx:for = "{{10}}" class="itemA">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="concenB" scroll-y hidden>
+   <view wx:for = "{{10}}" class="itemB">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="concenB" 
+             scroll-y
+             bindscroll = "myscroll"
+             bindscrolltoupper = "scrollup"
+             bindscrolltolower = "scrolldown"
+             upper-threshold = "200"
+             lower-threshold = "300">
+   <view wx:for = "{{10}}" class="itemB">{{item}}</view>
+</scroll-view>

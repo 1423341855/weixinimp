@@ -1,0 +1,16 @@
+<input/>
+<input confirm-type = "go"/>
+
+<input value="我是默认值"/>
+
+<input type="text"/>
+<input type="number"/>
+<input type="idcard"/>
+<input type="digit"/>
+
+<input password/>
+
+<input placeholder = "请输入内容" 
+       bindinput = 'inputgo'
+       bindfocus = 'focusgo'
+       bindblur = 'blurgo' />

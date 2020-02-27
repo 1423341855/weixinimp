@@ -1,0 +1,11 @@
+<!--pages/text/text.wxml-->
+<text>Hellow\n</text>
+<text>又见面了\n</text>
+<text selectable="true">you where?????????????????\n\n</text>
+
+<text>hellow world\n</text>
+<text space="ensp" >hellow world\n</text>
+<text space="emsp">hellow world\n</text>
+<text space="nbsp">hellow world\n</text>
+<text decode>5 &gt; 3\n</text>
+<text>5 &gt; 3</text>

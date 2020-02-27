@@ -1,0 +1,22 @@
+
+<image src = "../../assets/img/imgfour.jpg"/>
+<image src = "/assets/img/imgtwo.jpg" />
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582727252867&di=c4a4e2d855c42fd97f8bdbc3afc61a7e&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F9ecdc2372a1ed75675dadc0341cae0d7a304d2e6.jpg"/>
+
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582727252865&di=806bb81a2cef5ef78a89334a6b0a7843&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F886d9adb5ea117f63fc5feb5cc4cb627c4a75fda.jpg"/>
+
+<button bindtap="getimg">选中图片</button>
+<image src="{{imgpath}}"></image>
+
+<image wx:for = "{{2}}"
+       src="http://img0.imgtn.bdimg.com/it/u=1593679137,2119457487&fm=11&gp=0.jpg"
+       lazy-load 
+       bindload="imageload"
+></image>
+
+
+<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2079294012,1677105397&fm=26&gp=0.jpg"
+       show-menu-by-longpress
+       mode="widthFix"
+/>
+

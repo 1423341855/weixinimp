@@ -1,0 +1,11 @@
+var massage = 'Hellow world';
+var name = "coderwhy";
+
+function add(num, numB) {
+  return num * numB;
+}
+module.exports = {
+  massage: massage,
+  name: name,
+  add: add
+}

@@ -1,0 +1,3 @@
+<template name = 'you'>
+ <view>我是模板啊</view>
+</template>

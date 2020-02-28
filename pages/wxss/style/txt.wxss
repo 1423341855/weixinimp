@@ -1,0 +1,7 @@
+
+.txtA{
+  font-size: 30px;
+}
+.txtB{
+  font-size: 60rpx;
+}

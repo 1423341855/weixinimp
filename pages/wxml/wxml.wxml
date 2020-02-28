@@ -1,0 +1,15 @@
+<view>----------template-------------</view>
+
+<include src = "/template/top.wxml"/>
+
+<import src = "/template/template.wxml"/>
+<import src = "/template/you.wxml"/>
+
+<template is="onethtemplate" data="{{btntxt:'按钮A',content:'内容A'}}"/>
+<template is="onethtemplate" data="{{btntxt:'按钮B',content:'内容B'}}"/>
+
+<template is="you"></template>
+
+<include src = "/template/bottom.wxml"/>
+
+

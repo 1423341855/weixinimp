@@ -1,0 +1,14 @@
+
+@import './style/box.wxss';
+@import './style/txt.wxss';
+
+.boxxB{
+  background-color: skyblue !important; 
+}
+
+.boxx{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+

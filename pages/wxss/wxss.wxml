@@ -1,0 +1,52 @@
+<!--pages/wxss/wxss.wxml-->
+<view  style="color:red; font-size:32px;">航海·</view>
+
+<view>boxA</view>
+<view class="boxA"></view>
+
+<text>\n</text>
+
+<view>boxB</view>
+<view class="boxB"></view>
+
+<text>\n</text>
+
+<view class="txtA">哈哈哈</view>
+<view class="txtB">呵呵呵</view>
+
+<button class="btn">按钮</button>
+
+<view>{{name}} {{nameB}}</view>
+<view>{{name+'  '+nameB}}</view>
+<view>{{age >= 18 ? '成年人':'未成年人' }}</view>
+<view>{{nowTime}}</view>
+
+<button size="mini" bindtap="flags">颜色切换</button>
+<view class="boxx {{flag ? 'boxxB' : ''}}">我是box</view>
+
+<view bindtap="showB">显示切换</view>
+<view wx:if = '{{isshow}}'>啦啦啦啦</view>
+
+<view wx:if = "{{score >= 90}}">优秀</view>
+<view wx:elif = "{{score >= 80}}">良好</view>
+<view wx:elif = "{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- 列表渲染 -->
+<view wx:for = "{{['abd','ddw','aad']}}">{{item}}</view>
+<view wx:for = "abcdefjhjklmonp">{{item}}---{{index}}</view>
+<view wx:for = "{{9}}">{{item}}--{{index}}</view>
+
+<!-- block标签 -->
+<block wx:if = "{{true}}">
+ <text>呼呼呼</text>
+ <view>啦啦啦啦</view>
+</block>
+
+<view wx:for = '{{movel}}' wx:for-item = 'love' wx:for-index = "i" wx:key = "{{love}}">{{love}}--{{i}}</view>
+
+<block wx:for = '{{number}}' wx:for-item = 'numout'>
+  <block wx:for = '{{numout}}'>
+     <view>{{item}}---{{index}}</view>
+  </block>
+</block>

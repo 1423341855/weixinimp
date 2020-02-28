@@ -1,0 +1,4 @@
+<template name="onethtemplate"> 
+ <button size="mini">{{btntxt}}</button>
+ <view>{{content}}</view>
+</template>

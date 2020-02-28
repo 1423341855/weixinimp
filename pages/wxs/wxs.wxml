@@ -1,0 +1,25 @@
+<!-- <wxs module = 'info'>
+   var massage = 'Hellow world';
+   var name = "coderwhy";
+
+   function add(num,numB){
+      return num * numB;
+   }
+   module.exports = {
+    massage:massage,
+    name:name,
+    add:add 
+   }
+</wxs> -->
+
+<wxs src="../../wxsall/one.wxs" module="info" />
+
+<view>{{info.massage}}</view>
+<view>{{info.name}}</view>
+<view>{{info.add(100,300)}}</view>
+
+<wxs src="../../wxsall/fomas.wxs" module="numfir"/>
+
+<view>{{numfir.priceFormat(nums,4)}}</view>
+
+<view>{{time}}</view>

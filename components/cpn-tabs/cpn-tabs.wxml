@@ -1,0 +1,9 @@
+<view class="tab">
+   <block wx:for = "{{tits}}" wx:key = "{{index}}">
+      <view class="tab-item {{num == index ? 'active' : 'actives'}}" 
+            bindtap="numclk"
+            data-ind = "{{index}}">
+           <text>{{item}}</text>      
+      </view>
+   </block>
+</view>

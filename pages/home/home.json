@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cpnC":"/components/cpn-C/cpn-C"
+  }
 }

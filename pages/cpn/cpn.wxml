@@ -1,0 +1,16 @@
+<cpn-tap  titles = "{{['衣服','鞋子','裤子']}}"
+          bind:itemclick = "itemclick"/>
+
+<my-cpn></my-cpn>
+<my-cpn/>
+<my-cpn/>
+
+<cpn-D title="啦啦啦啦" titcolor = 'blue' />
+<cpn-D title="呼呼呼呼" titcolor = 'pink'/>
+<cpn-D titcolor = 'yellow'/>
+<cpn-D title="叽叽叽叽"/>
+
+<text>\n</text>
+
+<view>{{num}}</view>
+<cpn-E bind:adds = 'addsB'/>

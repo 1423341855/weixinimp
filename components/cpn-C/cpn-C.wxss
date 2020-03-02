@@ -1,0 +1,16 @@
+.title{
+  font-size: 50rpx;
+
+  font-weight: 700;
+}
+
+.content{
+  font-size: 40rpx;
+
+  color: #ff0000;
+}
+
+.txt{
+  font-size: 40rpx;
+  margin-left: 20px;
+}

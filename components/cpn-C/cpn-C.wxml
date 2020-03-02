@@ -1,0 +1,4 @@
+<!--components/cpn-C/cpn-C.wxml-->
+<view class="title">我是标题</view>
+<view class="content">我是cpn-C的内容</view>
+<view class="txt">哇哇哇哇</view>

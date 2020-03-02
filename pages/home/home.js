@@ -5,62 +5,55 @@ Page({
    * 页面的初始数据
    */
   data: {
+    title:['衣服','鞋子','羽绒服']
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  clicks(event){
+    console.log('已经点击',event);
+  },
+  touchstart(){
+    console.log("touchstart已经触发");
+  },
+  touchmove(){
+    console.log("touchmove已经触发");
+  },
+  touchcancel(){
+    console.log("touchcancel已经触发");
+  },
+  touchend(){
+    console.log("touchend已经触发");
+  },
+  tap(){
+    console.log("tap已经触发");
+  },
+  longpress(){
+    console.log("longpress已经触发");
+  },
+  viewclick(event){
+    console.log("成功触发事件",event);
+    const index = event.currentTarget.dataset.index;
+    const item = event.currentTarget.dataset.item;
+    console.log(index,item);
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  captureA(){
+    console.log('captureA')
+  },
+  captureB() {
+    console.log('captureB')
+  },
+  captureC() {
+    console.log('captureC')
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  clickA(){
+    console.log('clickA')
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  clickB() {
+    console.log('clickB')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  clickC() {
+    console.log('clickC')
   }
 })

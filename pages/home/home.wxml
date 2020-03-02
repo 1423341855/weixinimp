@@ -1,3 +1,37 @@
-<!--pages/home/home.wxml-->
-<text class="tit">heiiow-world</text>
-<button size="mini">按钮</button>
+<!-- 事件回顾 -->
+<button size="mini" bindtap="clicks">按钮</button>
+<button size="mini" bind:tap="clicks">按钮</button>
+<button size="mini" catchtap="clicks">按钮</button>
+
+<view class="box"
+   bindtouchstart="touchstart"
+   bindtouchmove="touchmove"
+   bindtouchcancel="touchcancel"
+   bindtouchend="touchend"
+   bindtap = "tap"
+   bindlongpress = 'longpress'
+></view>
+
+<text>\n</text>
+
+<view class="viewbox">
+   <block wx:for = "{{title}}"  wx:key = "{{index}}">
+      <view class="item" 
+            bindtap="viewclick"
+            data-index = "{{index}}"
+            data-item = "{{item}}">{{item}}</view>
+   </block>
+</view>
+
+<text>\n</text>
+<view class="viewA" capture-bind:tap = "captureA" bindtap="clickA">
+ <view class="viewB" capture-bind:tap = "captureB" bindtap="clickB">
+   <view class="viewC" capture-bind:tap = "captureC" catchtap="clickC">
+   </view>
+ </view>
+</view>
+
+<my-cpn></my-cpn>
+
+<cpnC></cpnC>
+<view class="txt">哈哈哈哈</view>

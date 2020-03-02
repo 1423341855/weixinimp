@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cpn-tabs":"/components/cpn-tabs/cpn-tabs",
+    "my-sel":"/components/my-sel/my-sel"
+  }
+}

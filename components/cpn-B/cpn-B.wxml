@@ -1,0 +1,2 @@
+<!--components/cpn-B/cpn-B.wxml-->
+<view class="box">我是boxA</view>

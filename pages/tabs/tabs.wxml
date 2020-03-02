@@ -1,0 +1,8 @@
+<view class="box">box</view>
+<cpn-tabs tits = "{{['火影','海贼','妖尾']}}"
+          bind:skyclick = "skyclicks"  />
+
+
+<text>\n</text>         
+<button size="mini" bind:tap="addnum">修改组件内的计数</button>
+<my-sel id = 'sel' />          

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cpn-tap":"/components/con-contap/con-contap",
+    "cpn-D":"/components/cpn-D/cpn-D",
+    "cpn-E":"/components/cpn-E/cpn-E"
+  }
+}

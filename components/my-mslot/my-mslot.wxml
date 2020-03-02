@@ -1,0 +1,8 @@
+<!--components/my-mslot/my-mslot.wxml-->
+<view>我是mslot组件头部</view>
+
+<view class="slotA"><slot name = "slotA"/></view>
+<view class="slotB"><slot name = "slotB"/></view>
+<view class="slotC"><slot name = "slotC"/></view>
+
+<view>我是mslot组件尾部</view>

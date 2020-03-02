@@ -1,3 +1,16 @@
-<!--pages/home/home.wxml-->
-<text class="tit">heiiow-world</text>
-<button size="mini">按钮</button>
+<my-slot>
+  <button size="mini">我是插入的按钮</button>
+  <slider value="80"></slider>
+</my-slot>
+
+<text>\n</text>
+
+<block wx:if = '{{isshow}}'>
+<my-mslot>
+<view slot = 'slotA'>滴滴滴</view>
+<button size="mini" slot='slotB'>我是按钮B</button>
+<view slot = 'slotC'>啦啦啦</view>
+</my-mslot>
+</block>
+
+<button bindtap="showis">显示切换</button>

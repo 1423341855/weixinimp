@@ -1,4 +1,6 @@
 // pages/home/home.js
+import requests from '../../service/network.js'
+
 Page({
 
   /**
@@ -12,7 +14,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      requests({
+        url:'http://127.0.0.1:8080/user/list',
+        data:{
+          type:'dataoneB'
+        }
+      }).then(res => {
+        console.log('成功啦',res);
+      }).catch(err => {
+        console.log('调用失败',err);
+      })
 
+    // wx.request({
+    //   url: 'http://127.0.0.1:8080/code/two',
+    //   method:'post',
+    //   data:{
+       
+    //   },
+    //   success: function(res){
+    //     console.log(res);
+    //   }
+    // })
   },
 
   /**
